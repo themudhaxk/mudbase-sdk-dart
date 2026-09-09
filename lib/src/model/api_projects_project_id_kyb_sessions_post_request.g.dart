@@ -1,0 +1,154 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'api_projects_project_id_kyb_sessions_post_request.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$ApiProjectsProjectIdKybSessionsPostRequest
+    extends ApiProjectsProjectIdKybSessionsPostRequest {
+  @override
+  final String? workflowId;
+  @override
+  final String? vendorBusinessId;
+  @override
+  final String? vendorData;
+  @override
+  final String? callback;
+  @override
+  final String? language;
+
+  factory _$ApiProjectsProjectIdKybSessionsPostRequest(
+          [void Function(ApiProjectsProjectIdKybSessionsPostRequestBuilder)?
+              updates]) =>
+      (ApiProjectsProjectIdKybSessionsPostRequestBuilder()..update(updates))
+          ._build();
+
+  _$ApiProjectsProjectIdKybSessionsPostRequest._(
+      {this.workflowId,
+      this.vendorBusinessId,
+      this.vendorData,
+      this.callback,
+      this.language})
+      : super._();
+  @override
+  ApiProjectsProjectIdKybSessionsPostRequest rebuild(
+          void Function(ApiProjectsProjectIdKybSessionsPostRequestBuilder)
+              updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  ApiProjectsProjectIdKybSessionsPostRequestBuilder toBuilder() =>
+      ApiProjectsProjectIdKybSessionsPostRequestBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is ApiProjectsProjectIdKybSessionsPostRequest &&
+        workflowId == other.workflowId &&
+        vendorBusinessId == other.vendorBusinessId &&
+        vendorData == other.vendorData &&
+        callback == other.callback &&
+        language == other.language;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, workflowId.hashCode);
+    _$hash = $jc(_$hash, vendorBusinessId.hashCode);
+    _$hash = $jc(_$hash, vendorData.hashCode);
+    _$hash = $jc(_$hash, callback.hashCode);
+    _$hash = $jc(_$hash, language.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(
+            r'ApiProjectsProjectIdKybSessionsPostRequest')
+          ..add('workflowId', workflowId)
+          ..add('vendorBusinessId', vendorBusinessId)
+          ..add('vendorData', vendorData)
+          ..add('callback', callback)
+          ..add('language', language))
+        .toString();
+  }
+}
+
+class ApiProjectsProjectIdKybSessionsPostRequestBuilder
+    implements
+        Builder<ApiProjectsProjectIdKybSessionsPostRequest,
+            ApiProjectsProjectIdKybSessionsPostRequestBuilder> {
+  _$ApiProjectsProjectIdKybSessionsPostRequest? _$v;
+
+  String? _workflowId;
+  String? get workflowId => _$this._workflowId;
+  set workflowId(String? workflowId) => _$this._workflowId = workflowId;
+
+  String? _vendorBusinessId;
+  String? get vendorBusinessId => _$this._vendorBusinessId;
+  set vendorBusinessId(String? vendorBusinessId) =>
+      _$this._vendorBusinessId = vendorBusinessId;
+
+  String? _vendorData;
+  String? get vendorData => _$this._vendorData;
+  set vendorData(String? vendorData) => _$this._vendorData = vendorData;
+
+  String? _callback;
+  String? get callback => _$this._callback;
+  set callback(String? callback) => _$this._callback = callback;
+
+  String? _language;
+  String? get language => _$this._language;
+  set language(String? language) => _$this._language = language;
+
+  ApiProjectsProjectIdKybSessionsPostRequestBuilder() {
+    ApiProjectsProjectIdKybSessionsPostRequest._defaults(this);
+  }
+
+  ApiProjectsProjectIdKybSessionsPostRequestBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _workflowId = $v.workflowId;
+      _vendorBusinessId = $v.vendorBusinessId;
+      _vendorData = $v.vendorData;
+      _callback = $v.callback;
+      _language = $v.language;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(ApiProjectsProjectIdKybSessionsPostRequest other) {
+    _$v = other as _$ApiProjectsProjectIdKybSessionsPostRequest;
+  }
+
+  @override
+  void update(
+      void Function(ApiProjectsProjectIdKybSessionsPostRequestBuilder)?
+          updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  ApiProjectsProjectIdKybSessionsPostRequest build() => _build();
+
+  _$ApiProjectsProjectIdKybSessionsPostRequest _build() {
+    final _$result = _$v ??
+        _$ApiProjectsProjectIdKybSessionsPostRequest._(
+          workflowId: workflowId,
+          vendorBusinessId: vendorBusinessId,
+          vendorData: vendorData,
+          callback: callback,
+          language: language,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

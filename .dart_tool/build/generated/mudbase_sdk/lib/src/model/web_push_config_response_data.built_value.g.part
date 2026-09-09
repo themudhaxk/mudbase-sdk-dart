@@ -1,0 +1,141 @@
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$WebPushConfigResponseData extends WebPushConfigResponseData {
+  @override
+  final bool? enabled;
+  @override
+  final bool? hasKeys;
+  @override
+  final String? publicKey;
+  @override
+  final String? vapidSubject;
+  @override
+  final DateTime? generatedAt;
+
+  factory _$WebPushConfigResponseData(
+          [void Function(WebPushConfigResponseDataBuilder)? updates]) =>
+      (WebPushConfigResponseDataBuilder()..update(updates))._build();
+
+  _$WebPushConfigResponseData._(
+      {this.enabled,
+      this.hasKeys,
+      this.publicKey,
+      this.vapidSubject,
+      this.generatedAt})
+      : super._();
+  @override
+  WebPushConfigResponseData rebuild(
+          void Function(WebPushConfigResponseDataBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  WebPushConfigResponseDataBuilder toBuilder() =>
+      WebPushConfigResponseDataBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is WebPushConfigResponseData &&
+        enabled == other.enabled &&
+        hasKeys == other.hasKeys &&
+        publicKey == other.publicKey &&
+        vapidSubject == other.vapidSubject &&
+        generatedAt == other.generatedAt;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, enabled.hashCode);
+    _$hash = $jc(_$hash, hasKeys.hashCode);
+    _$hash = $jc(_$hash, publicKey.hashCode);
+    _$hash = $jc(_$hash, vapidSubject.hashCode);
+    _$hash = $jc(_$hash, generatedAt.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'WebPushConfigResponseData')
+          ..add('enabled', enabled)
+          ..add('hasKeys', hasKeys)
+          ..add('publicKey', publicKey)
+          ..add('vapidSubject', vapidSubject)
+          ..add('generatedAt', generatedAt))
+        .toString();
+  }
+}
+
+class WebPushConfigResponseDataBuilder
+    implements
+        Builder<WebPushConfigResponseData, WebPushConfigResponseDataBuilder> {
+  _$WebPushConfigResponseData? _$v;
+
+  bool? _enabled;
+  bool? get enabled => _$this._enabled;
+  set enabled(bool? enabled) => _$this._enabled = enabled;
+
+  bool? _hasKeys;
+  bool? get hasKeys => _$this._hasKeys;
+  set hasKeys(bool? hasKeys) => _$this._hasKeys = hasKeys;
+
+  String? _publicKey;
+  String? get publicKey => _$this._publicKey;
+  set publicKey(String? publicKey) => _$this._publicKey = publicKey;
+
+  String? _vapidSubject;
+  String? get vapidSubject => _$this._vapidSubject;
+  set vapidSubject(String? vapidSubject) => _$this._vapidSubject = vapidSubject;
+
+  DateTime? _generatedAt;
+  DateTime? get generatedAt => _$this._generatedAt;
+  set generatedAt(DateTime? generatedAt) => _$this._generatedAt = generatedAt;
+
+  WebPushConfigResponseDataBuilder() {
+    WebPushConfigResponseData._defaults(this);
+  }
+
+  WebPushConfigResponseDataBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _enabled = $v.enabled;
+      _hasKeys = $v.hasKeys;
+      _publicKey = $v.publicKey;
+      _vapidSubject = $v.vapidSubject;
+      _generatedAt = $v.generatedAt;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(WebPushConfigResponseData other) {
+    _$v = other as _$WebPushConfigResponseData;
+  }
+
+  @override
+  void update(void Function(WebPushConfigResponseDataBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  WebPushConfigResponseData build() => _build();
+
+  _$WebPushConfigResponseData _build() {
+    final _$result = _$v ??
+        _$WebPushConfigResponseData._(
+          enabled: enabled,
+          hasKeys: hasKeys,
+          publicKey: publicKey,
+          vapidSubject: vapidSubject,
+          generatedAt: generatedAt,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

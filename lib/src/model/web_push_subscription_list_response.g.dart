@@ -1,0 +1,123 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'web_push_subscription_list_response.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$WebPushSubscriptionListResponse
+    extends WebPushSubscriptionListResponse {
+  @override
+  final bool? success;
+  @override
+  final BuiltList<WebPushSubscriptionSummary>? data;
+
+  factory _$WebPushSubscriptionListResponse(
+          [void Function(WebPushSubscriptionListResponseBuilder)? updates]) =>
+      (WebPushSubscriptionListResponseBuilder()..update(updates))._build();
+
+  _$WebPushSubscriptionListResponse._({this.success, this.data}) : super._();
+  @override
+  WebPushSubscriptionListResponse rebuild(
+          void Function(WebPushSubscriptionListResponseBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  WebPushSubscriptionListResponseBuilder toBuilder() =>
+      WebPushSubscriptionListResponseBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is WebPushSubscriptionListResponse &&
+        success == other.success &&
+        data == other.data;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, success.hashCode);
+    _$hash = $jc(_$hash, data.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'WebPushSubscriptionListResponse')
+          ..add('success', success)
+          ..add('data', data))
+        .toString();
+  }
+}
+
+class WebPushSubscriptionListResponseBuilder
+    implements
+        Builder<WebPushSubscriptionListResponse,
+            WebPushSubscriptionListResponseBuilder> {
+  _$WebPushSubscriptionListResponse? _$v;
+
+  bool? _success;
+  bool? get success => _$this._success;
+  set success(bool? success) => _$this._success = success;
+
+  ListBuilder<WebPushSubscriptionSummary>? _data;
+  ListBuilder<WebPushSubscriptionSummary> get data =>
+      _$this._data ??= ListBuilder<WebPushSubscriptionSummary>();
+  set data(ListBuilder<WebPushSubscriptionSummary>? data) =>
+      _$this._data = data;
+
+  WebPushSubscriptionListResponseBuilder() {
+    WebPushSubscriptionListResponse._defaults(this);
+  }
+
+  WebPushSubscriptionListResponseBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _success = $v.success;
+      _data = $v.data?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(WebPushSubscriptionListResponse other) {
+    _$v = other as _$WebPushSubscriptionListResponse;
+  }
+
+  @override
+  void update(void Function(WebPushSubscriptionListResponseBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  WebPushSubscriptionListResponse build() => _build();
+
+  _$WebPushSubscriptionListResponse _build() {
+    _$WebPushSubscriptionListResponse _$result;
+    try {
+      _$result = _$v ??
+          _$WebPushSubscriptionListResponse._(
+            success: success,
+            data: _data?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'data';
+        _data?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+            r'WebPushSubscriptionListResponse', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

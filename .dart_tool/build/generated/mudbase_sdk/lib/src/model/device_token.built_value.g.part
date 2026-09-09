@@ -1,0 +1,189 @@
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+const DeviceTokenPlatformEnum _$deviceTokenPlatformEnum_ios =
+    const DeviceTokenPlatformEnum._('ios');
+const DeviceTokenPlatformEnum _$deviceTokenPlatformEnum_android =
+    const DeviceTokenPlatformEnum._('android');
+const DeviceTokenPlatformEnum _$deviceTokenPlatformEnum_web =
+    const DeviceTokenPlatformEnum._('web');
+const DeviceTokenPlatformEnum _$deviceTokenPlatformEnum_unknown =
+    const DeviceTokenPlatformEnum._('unknown');
+
+DeviceTokenPlatformEnum _$deviceTokenPlatformEnumValueOf(String name) {
+  switch (name) {
+    case 'ios':
+      return _$deviceTokenPlatformEnum_ios;
+    case 'android':
+      return _$deviceTokenPlatformEnum_android;
+    case 'web':
+      return _$deviceTokenPlatformEnum_web;
+    case 'unknown':
+      return _$deviceTokenPlatformEnum_unknown;
+    default:
+      throw ArgumentError(name);
+  }
+}
+
+final BuiltSet<DeviceTokenPlatformEnum> _$deviceTokenPlatformEnumValues =
+    BuiltSet<DeviceTokenPlatformEnum>(const <DeviceTokenPlatformEnum>[
+  _$deviceTokenPlatformEnum_ios,
+  _$deviceTokenPlatformEnum_android,
+  _$deviceTokenPlatformEnum_web,
+  _$deviceTokenPlatformEnum_unknown,
+]);
+
+Serializer<DeviceTokenPlatformEnum> _$deviceTokenPlatformEnumSerializer =
+    _$DeviceTokenPlatformEnumSerializer();
+
+class _$DeviceTokenPlatformEnumSerializer
+    implements PrimitiveSerializer<DeviceTokenPlatformEnum> {
+  static const Map<String, Object> _toWire = const <String, Object>{
+    'ios': 'ios',
+    'android': 'android',
+    'web': 'web',
+    'unknown': 'unknown',
+  };
+  static const Map<Object, String> _fromWire = const <Object, String>{
+    'ios': 'ios',
+    'android': 'android',
+    'web': 'web',
+    'unknown': 'unknown',
+  };
+
+  @override
+  final Iterable<Type> types = const <Type>[DeviceTokenPlatformEnum];
+  @override
+  final String wireName = 'DeviceTokenPlatformEnum';
+
+  @override
+  Object serialize(Serializers serializers, DeviceTokenPlatformEnum object,
+          {FullType specifiedType = FullType.unspecified}) =>
+      _toWire[object.name] ?? object.name;
+
+  @override
+  DeviceTokenPlatformEnum deserialize(
+          Serializers serializers, Object serialized,
+          {FullType specifiedType = FullType.unspecified}) =>
+      DeviceTokenPlatformEnum.valueOf(
+          _fromWire[serialized] ?? (serialized is String ? serialized : ''));
+}
+
+class _$DeviceToken extends DeviceToken {
+  @override
+  final String? token;
+  @override
+  final DeviceTokenPlatformEnum? platform;
+  @override
+  final DateTime? lastSeenAt;
+  @override
+  final DateTime? createdAt;
+
+  factory _$DeviceToken([void Function(DeviceTokenBuilder)? updates]) =>
+      (DeviceTokenBuilder()..update(updates))._build();
+
+  _$DeviceToken._({this.token, this.platform, this.lastSeenAt, this.createdAt})
+      : super._();
+  @override
+  DeviceToken rebuild(void Function(DeviceTokenBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  DeviceTokenBuilder toBuilder() => DeviceTokenBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is DeviceToken &&
+        token == other.token &&
+        platform == other.platform &&
+        lastSeenAt == other.lastSeenAt &&
+        createdAt == other.createdAt;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, token.hashCode);
+    _$hash = $jc(_$hash, platform.hashCode);
+    _$hash = $jc(_$hash, lastSeenAt.hashCode);
+    _$hash = $jc(_$hash, createdAt.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'DeviceToken')
+          ..add('token', token)
+          ..add('platform', platform)
+          ..add('lastSeenAt', lastSeenAt)
+          ..add('createdAt', createdAt))
+        .toString();
+  }
+}
+
+class DeviceTokenBuilder implements Builder<DeviceToken, DeviceTokenBuilder> {
+  _$DeviceToken? _$v;
+
+  String? _token;
+  String? get token => _$this._token;
+  set token(String? token) => _$this._token = token;
+
+  DeviceTokenPlatformEnum? _platform;
+  DeviceTokenPlatformEnum? get platform => _$this._platform;
+  set platform(DeviceTokenPlatformEnum? platform) =>
+      _$this._platform = platform;
+
+  DateTime? _lastSeenAt;
+  DateTime? get lastSeenAt => _$this._lastSeenAt;
+  set lastSeenAt(DateTime? lastSeenAt) => _$this._lastSeenAt = lastSeenAt;
+
+  DateTime? _createdAt;
+  DateTime? get createdAt => _$this._createdAt;
+  set createdAt(DateTime? createdAt) => _$this._createdAt = createdAt;
+
+  DeviceTokenBuilder() {
+    DeviceToken._defaults(this);
+  }
+
+  DeviceTokenBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _token = $v.token;
+      _platform = $v.platform;
+      _lastSeenAt = $v.lastSeenAt;
+      _createdAt = $v.createdAt;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(DeviceToken other) {
+    _$v = other as _$DeviceToken;
+  }
+
+  @override
+  void update(void Function(DeviceTokenBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  DeviceToken build() => _build();
+
+  _$DeviceToken _build() {
+    final _$result = _$v ??
+        _$DeviceToken._(
+          token: token,
+          platform: platform,
+          lastSeenAt: lastSeenAt,
+          createdAt: createdAt,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

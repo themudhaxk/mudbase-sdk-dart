@@ -1,0 +1,119 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'device_list_response.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$DeviceListResponse extends DeviceListResponse {
+  @override
+  final bool? success;
+  @override
+  final BuiltList<DeviceToken>? data;
+
+  factory _$DeviceListResponse(
+          [void Function(DeviceListResponseBuilder)? updates]) =>
+      (DeviceListResponseBuilder()..update(updates))._build();
+
+  _$DeviceListResponse._({this.success, this.data}) : super._();
+  @override
+  DeviceListResponse rebuild(
+          void Function(DeviceListResponseBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  DeviceListResponseBuilder toBuilder() =>
+      DeviceListResponseBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is DeviceListResponse &&
+        success == other.success &&
+        data == other.data;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, success.hashCode);
+    _$hash = $jc(_$hash, data.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'DeviceListResponse')
+          ..add('success', success)
+          ..add('data', data))
+        .toString();
+  }
+}
+
+class DeviceListResponseBuilder
+    implements Builder<DeviceListResponse, DeviceListResponseBuilder> {
+  _$DeviceListResponse? _$v;
+
+  bool? _success;
+  bool? get success => _$this._success;
+  set success(bool? success) => _$this._success = success;
+
+  ListBuilder<DeviceToken>? _data;
+  ListBuilder<DeviceToken> get data =>
+      _$this._data ??= ListBuilder<DeviceToken>();
+  set data(ListBuilder<DeviceToken>? data) => _$this._data = data;
+
+  DeviceListResponseBuilder() {
+    DeviceListResponse._defaults(this);
+  }
+
+  DeviceListResponseBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _success = $v.success;
+      _data = $v.data?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(DeviceListResponse other) {
+    _$v = other as _$DeviceListResponse;
+  }
+
+  @override
+  void update(void Function(DeviceListResponseBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  DeviceListResponse build() => _build();
+
+  _$DeviceListResponse _build() {
+    _$DeviceListResponse _$result;
+    try {
+      _$result = _$v ??
+          _$DeviceListResponse._(
+            success: success,
+            data: _data?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'data';
+        _data?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+            r'DeviceListResponse', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

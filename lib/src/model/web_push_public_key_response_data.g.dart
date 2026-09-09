@@ -1,0 +1,107 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'web_push_public_key_response_data.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$WebPushPublicKeyResponseData extends WebPushPublicKeyResponseData {
+  @override
+  final bool? enabled;
+  @override
+  final String? publicKey;
+
+  factory _$WebPushPublicKeyResponseData(
+          [void Function(WebPushPublicKeyResponseDataBuilder)? updates]) =>
+      (WebPushPublicKeyResponseDataBuilder()..update(updates))._build();
+
+  _$WebPushPublicKeyResponseData._({this.enabled, this.publicKey}) : super._();
+  @override
+  WebPushPublicKeyResponseData rebuild(
+          void Function(WebPushPublicKeyResponseDataBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  WebPushPublicKeyResponseDataBuilder toBuilder() =>
+      WebPushPublicKeyResponseDataBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is WebPushPublicKeyResponseData &&
+        enabled == other.enabled &&
+        publicKey == other.publicKey;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, enabled.hashCode);
+    _$hash = $jc(_$hash, publicKey.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'WebPushPublicKeyResponseData')
+          ..add('enabled', enabled)
+          ..add('publicKey', publicKey))
+        .toString();
+  }
+}
+
+class WebPushPublicKeyResponseDataBuilder
+    implements
+        Builder<WebPushPublicKeyResponseData,
+            WebPushPublicKeyResponseDataBuilder> {
+  _$WebPushPublicKeyResponseData? _$v;
+
+  bool? _enabled;
+  bool? get enabled => _$this._enabled;
+  set enabled(bool? enabled) => _$this._enabled = enabled;
+
+  String? _publicKey;
+  String? get publicKey => _$this._publicKey;
+  set publicKey(String? publicKey) => _$this._publicKey = publicKey;
+
+  WebPushPublicKeyResponseDataBuilder() {
+    WebPushPublicKeyResponseData._defaults(this);
+  }
+
+  WebPushPublicKeyResponseDataBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _enabled = $v.enabled;
+      _publicKey = $v.publicKey;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(WebPushPublicKeyResponseData other) {
+    _$v = other as _$WebPushPublicKeyResponseData;
+  }
+
+  @override
+  void update(void Function(WebPushPublicKeyResponseDataBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  WebPushPublicKeyResponseData build() => _build();
+
+  _$WebPushPublicKeyResponseData _build() {
+    final _$result = _$v ??
+        _$WebPushPublicKeyResponseData._(
+          enabled: enabled,
+          publicKey: publicKey,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

@@ -1,0 +1,116 @@
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$DeviceRegisteredResponse extends DeviceRegisteredResponse {
+  @override
+  final bool? success;
+  @override
+  final DeviceRegisteredResponseData? data;
+
+  factory _$DeviceRegisteredResponse(
+          [void Function(DeviceRegisteredResponseBuilder)? updates]) =>
+      (DeviceRegisteredResponseBuilder()..update(updates))._build();
+
+  _$DeviceRegisteredResponse._({this.success, this.data}) : super._();
+  @override
+  DeviceRegisteredResponse rebuild(
+          void Function(DeviceRegisteredResponseBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  DeviceRegisteredResponseBuilder toBuilder() =>
+      DeviceRegisteredResponseBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is DeviceRegisteredResponse &&
+        success == other.success &&
+        data == other.data;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, success.hashCode);
+    _$hash = $jc(_$hash, data.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'DeviceRegisteredResponse')
+          ..add('success', success)
+          ..add('data', data))
+        .toString();
+  }
+}
+
+class DeviceRegisteredResponseBuilder
+    implements
+        Builder<DeviceRegisteredResponse, DeviceRegisteredResponseBuilder> {
+  _$DeviceRegisteredResponse? _$v;
+
+  bool? _success;
+  bool? get success => _$this._success;
+  set success(bool? success) => _$this._success = success;
+
+  DeviceRegisteredResponseDataBuilder? _data;
+  DeviceRegisteredResponseDataBuilder get data =>
+      _$this._data ??= DeviceRegisteredResponseDataBuilder();
+  set data(DeviceRegisteredResponseDataBuilder? data) => _$this._data = data;
+
+  DeviceRegisteredResponseBuilder() {
+    DeviceRegisteredResponse._defaults(this);
+  }
+
+  DeviceRegisteredResponseBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _success = $v.success;
+      _data = $v.data?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(DeviceRegisteredResponse other) {
+    _$v = other as _$DeviceRegisteredResponse;
+  }
+
+  @override
+  void update(void Function(DeviceRegisteredResponseBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  DeviceRegisteredResponse build() => _build();
+
+  _$DeviceRegisteredResponse _build() {
+    _$DeviceRegisteredResponse _$result;
+    try {
+      _$result = _$v ??
+          _$DeviceRegisteredResponse._(
+            success: success,
+            data: _data?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'data';
+        _data?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+            r'DeviceRegisteredResponse', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

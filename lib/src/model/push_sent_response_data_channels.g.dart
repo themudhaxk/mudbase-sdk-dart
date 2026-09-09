@@ -1,0 +1,125 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'push_sent_response_data_channels.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$PushSentResponseDataChannels extends PushSentResponseDataChannels {
+  @override
+  final PushSentResponseDataChannelsFcm? fcm;
+  @override
+  final PushSentResponseDataChannelsWebPush? webPush;
+
+  factory _$PushSentResponseDataChannels(
+          [void Function(PushSentResponseDataChannelsBuilder)? updates]) =>
+      (PushSentResponseDataChannelsBuilder()..update(updates))._build();
+
+  _$PushSentResponseDataChannels._({this.fcm, this.webPush}) : super._();
+  @override
+  PushSentResponseDataChannels rebuild(
+          void Function(PushSentResponseDataChannelsBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  PushSentResponseDataChannelsBuilder toBuilder() =>
+      PushSentResponseDataChannelsBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is PushSentResponseDataChannels &&
+        fcm == other.fcm &&
+        webPush == other.webPush;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, fcm.hashCode);
+    _$hash = $jc(_$hash, webPush.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'PushSentResponseDataChannels')
+          ..add('fcm', fcm)
+          ..add('webPush', webPush))
+        .toString();
+  }
+}
+
+class PushSentResponseDataChannelsBuilder
+    implements
+        Builder<PushSentResponseDataChannels,
+            PushSentResponseDataChannelsBuilder> {
+  _$PushSentResponseDataChannels? _$v;
+
+  PushSentResponseDataChannelsFcmBuilder? _fcm;
+  PushSentResponseDataChannelsFcmBuilder get fcm =>
+      _$this._fcm ??= PushSentResponseDataChannelsFcmBuilder();
+  set fcm(PushSentResponseDataChannelsFcmBuilder? fcm) => _$this._fcm = fcm;
+
+  PushSentResponseDataChannelsWebPushBuilder? _webPush;
+  PushSentResponseDataChannelsWebPushBuilder get webPush =>
+      _$this._webPush ??= PushSentResponseDataChannelsWebPushBuilder();
+  set webPush(PushSentResponseDataChannelsWebPushBuilder? webPush) =>
+      _$this._webPush = webPush;
+
+  PushSentResponseDataChannelsBuilder() {
+    PushSentResponseDataChannels._defaults(this);
+  }
+
+  PushSentResponseDataChannelsBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _fcm = $v.fcm?.toBuilder();
+      _webPush = $v.webPush?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(PushSentResponseDataChannels other) {
+    _$v = other as _$PushSentResponseDataChannels;
+  }
+
+  @override
+  void update(void Function(PushSentResponseDataChannelsBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  PushSentResponseDataChannels build() => _build();
+
+  _$PushSentResponseDataChannels _build() {
+    _$PushSentResponseDataChannels _$result;
+    try {
+      _$result = _$v ??
+          _$PushSentResponseDataChannels._(
+            fcm: _fcm?.build(),
+            webPush: _webPush?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'fcm';
+        _fcm?.build();
+        _$failedField = 'webPush';
+        _webPush?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+            r'PushSentResponseDataChannels', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint
