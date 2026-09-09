@@ -1,0 +1,120 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'web_push_subscribe_response_data.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$WebPushSubscribeResponseData extends WebPushSubscribeResponseData {
+  @override
+  final String? endpoint;
+  @override
+  final String? userId;
+  @override
+  final DateTime? lastSeenAt;
+
+  factory _$WebPushSubscribeResponseData(
+          [void Function(WebPushSubscribeResponseDataBuilder)? updates]) =>
+      (WebPushSubscribeResponseDataBuilder()..update(updates))._build();
+
+  _$WebPushSubscribeResponseData._(
+      {this.endpoint, this.userId, this.lastSeenAt})
+      : super._();
+  @override
+  WebPushSubscribeResponseData rebuild(
+          void Function(WebPushSubscribeResponseDataBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  WebPushSubscribeResponseDataBuilder toBuilder() =>
+      WebPushSubscribeResponseDataBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is WebPushSubscribeResponseData &&
+        endpoint == other.endpoint &&
+        userId == other.userId &&
+        lastSeenAt == other.lastSeenAt;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, endpoint.hashCode);
+    _$hash = $jc(_$hash, userId.hashCode);
+    _$hash = $jc(_$hash, lastSeenAt.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'WebPushSubscribeResponseData')
+          ..add('endpoint', endpoint)
+          ..add('userId', userId)
+          ..add('lastSeenAt', lastSeenAt))
+        .toString();
+  }
+}
+
+class WebPushSubscribeResponseDataBuilder
+    implements
+        Builder<WebPushSubscribeResponseData,
+            WebPushSubscribeResponseDataBuilder> {
+  _$WebPushSubscribeResponseData? _$v;
+
+  String? _endpoint;
+  String? get endpoint => _$this._endpoint;
+  set endpoint(String? endpoint) => _$this._endpoint = endpoint;
+
+  String? _userId;
+  String? get userId => _$this._userId;
+  set userId(String? userId) => _$this._userId = userId;
+
+  DateTime? _lastSeenAt;
+  DateTime? get lastSeenAt => _$this._lastSeenAt;
+  set lastSeenAt(DateTime? lastSeenAt) => _$this._lastSeenAt = lastSeenAt;
+
+  WebPushSubscribeResponseDataBuilder() {
+    WebPushSubscribeResponseData._defaults(this);
+  }
+
+  WebPushSubscribeResponseDataBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _endpoint = $v.endpoint;
+      _userId = $v.userId;
+      _lastSeenAt = $v.lastSeenAt;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(WebPushSubscribeResponseData other) {
+    _$v = other as _$WebPushSubscribeResponseData;
+  }
+
+  @override
+  void update(void Function(WebPushSubscribeResponseDataBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  WebPushSubscribeResponseData build() => _build();
+
+  _$WebPushSubscribeResponseData _build() {
+    final _$result = _$v ??
+        _$WebPushSubscribeResponseData._(
+          endpoint: endpoint,
+          userId: userId,
+          lastSeenAt: lastSeenAt,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint
