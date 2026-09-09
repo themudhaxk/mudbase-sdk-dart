@@ -1,0 +1,137 @@
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$ApiKycWorkflowsGet200Response extends ApiKycWorkflowsGet200Response {
+  @override
+  final BuiltList<ApiKycWorkflowsGet200ResponseWorkflowsInner>? workflows;
+  @override
+  final BuiltList<JsonObject>? kyc;
+  @override
+  final BuiltList<JsonObject>? kyb;
+
+  factory _$ApiKycWorkflowsGet200Response(
+          [void Function(ApiKycWorkflowsGet200ResponseBuilder)? updates]) =>
+      (ApiKycWorkflowsGet200ResponseBuilder()..update(updates))._build();
+
+  _$ApiKycWorkflowsGet200Response._({this.workflows, this.kyc, this.kyb})
+      : super._();
+  @override
+  ApiKycWorkflowsGet200Response rebuild(
+          void Function(ApiKycWorkflowsGet200ResponseBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  ApiKycWorkflowsGet200ResponseBuilder toBuilder() =>
+      ApiKycWorkflowsGet200ResponseBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is ApiKycWorkflowsGet200Response &&
+        workflows == other.workflows &&
+        kyc == other.kyc &&
+        kyb == other.kyb;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, workflows.hashCode);
+    _$hash = $jc(_$hash, kyc.hashCode);
+    _$hash = $jc(_$hash, kyb.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'ApiKycWorkflowsGet200Response')
+          ..add('workflows', workflows)
+          ..add('kyc', kyc)
+          ..add('kyb', kyb))
+        .toString();
+  }
+}
+
+class ApiKycWorkflowsGet200ResponseBuilder
+    implements
+        Builder<ApiKycWorkflowsGet200Response,
+            ApiKycWorkflowsGet200ResponseBuilder> {
+  _$ApiKycWorkflowsGet200Response? _$v;
+
+  ListBuilder<ApiKycWorkflowsGet200ResponseWorkflowsInner>? _workflows;
+  ListBuilder<ApiKycWorkflowsGet200ResponseWorkflowsInner> get workflows =>
+      _$this._workflows ??=
+          ListBuilder<ApiKycWorkflowsGet200ResponseWorkflowsInner>();
+  set workflows(
+          ListBuilder<ApiKycWorkflowsGet200ResponseWorkflowsInner>?
+              workflows) =>
+      _$this._workflows = workflows;
+
+  ListBuilder<JsonObject>? _kyc;
+  ListBuilder<JsonObject> get kyc => _$this._kyc ??= ListBuilder<JsonObject>();
+  set kyc(ListBuilder<JsonObject>? kyc) => _$this._kyc = kyc;
+
+  ListBuilder<JsonObject>? _kyb;
+  ListBuilder<JsonObject> get kyb => _$this._kyb ??= ListBuilder<JsonObject>();
+  set kyb(ListBuilder<JsonObject>? kyb) => _$this._kyb = kyb;
+
+  ApiKycWorkflowsGet200ResponseBuilder() {
+    ApiKycWorkflowsGet200Response._defaults(this);
+  }
+
+  ApiKycWorkflowsGet200ResponseBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _workflows = $v.workflows?.toBuilder();
+      _kyc = $v.kyc?.toBuilder();
+      _kyb = $v.kyb?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(ApiKycWorkflowsGet200Response other) {
+    _$v = other as _$ApiKycWorkflowsGet200Response;
+  }
+
+  @override
+  void update(void Function(ApiKycWorkflowsGet200ResponseBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  ApiKycWorkflowsGet200Response build() => _build();
+
+  _$ApiKycWorkflowsGet200Response _build() {
+    _$ApiKycWorkflowsGet200Response _$result;
+    try {
+      _$result = _$v ??
+          _$ApiKycWorkflowsGet200Response._(
+            workflows: _workflows?.build(),
+            kyc: _kyc?.build(),
+            kyb: _kyb?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'workflows';
+        _workflows?.build();
+        _$failedField = 'kyc';
+        _kyc?.build();
+        _$failedField = 'kyb';
+        _kyb?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+            r'ApiKycWorkflowsGet200Response', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

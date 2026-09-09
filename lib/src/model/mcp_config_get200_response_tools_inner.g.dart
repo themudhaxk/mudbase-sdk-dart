@@ -1,0 +1,110 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'mcp_config_get200_response_tools_inner.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$McpConfigGet200ResponseToolsInner
+    extends McpConfigGet200ResponseToolsInner {
+  @override
+  final String? name;
+  @override
+  final String? description;
+
+  factory _$McpConfigGet200ResponseToolsInner(
+          [void Function(McpConfigGet200ResponseToolsInnerBuilder)? updates]) =>
+      (McpConfigGet200ResponseToolsInnerBuilder()..update(updates))._build();
+
+  _$McpConfigGet200ResponseToolsInner._({this.name, this.description})
+      : super._();
+  @override
+  McpConfigGet200ResponseToolsInner rebuild(
+          void Function(McpConfigGet200ResponseToolsInnerBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  McpConfigGet200ResponseToolsInnerBuilder toBuilder() =>
+      McpConfigGet200ResponseToolsInnerBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is McpConfigGet200ResponseToolsInner &&
+        name == other.name &&
+        description == other.description;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, description.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'McpConfigGet200ResponseToolsInner')
+          ..add('name', name)
+          ..add('description', description))
+        .toString();
+  }
+}
+
+class McpConfigGet200ResponseToolsInnerBuilder
+    implements
+        Builder<McpConfigGet200ResponseToolsInner,
+            McpConfigGet200ResponseToolsInnerBuilder> {
+  _$McpConfigGet200ResponseToolsInner? _$v;
+
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
+
+  String? _description;
+  String? get description => _$this._description;
+  set description(String? description) => _$this._description = description;
+
+  McpConfigGet200ResponseToolsInnerBuilder() {
+    McpConfigGet200ResponseToolsInner._defaults(this);
+  }
+
+  McpConfigGet200ResponseToolsInnerBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _name = $v.name;
+      _description = $v.description;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(McpConfigGet200ResponseToolsInner other) {
+    _$v = other as _$McpConfigGet200ResponseToolsInner;
+  }
+
+  @override
+  void update(
+      void Function(McpConfigGet200ResponseToolsInnerBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  McpConfigGet200ResponseToolsInner build() => _build();
+
+  _$McpConfigGet200ResponseToolsInner _build() {
+    final _$result = _$v ??
+        _$McpConfigGet200ResponseToolsInner._(
+          name: name,
+          description: description,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint
