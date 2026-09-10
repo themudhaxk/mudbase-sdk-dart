@@ -1,0 +1,191 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'mcp_config_get200_response.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$McpConfigGet200Response extends McpConfigGet200Response {
+  @override
+  final bool? enabled;
+  @override
+  final String? plan;
+  @override
+  final BuiltList<String>? allowedPlans;
+  @override
+  final bool? freePromoActive;
+  @override
+  final DateTime? freePromoEndsAt;
+  @override
+  final String? endpoint;
+  @override
+  final BuiltList<McpConfigGet200ResponseToolsInner>? tools;
+
+  factory _$McpConfigGet200Response(
+          [void Function(McpConfigGet200ResponseBuilder)? updates]) =>
+      (McpConfigGet200ResponseBuilder()..update(updates))._build();
+
+  _$McpConfigGet200Response._(
+      {this.enabled,
+      this.plan,
+      this.allowedPlans,
+      this.freePromoActive,
+      this.freePromoEndsAt,
+      this.endpoint,
+      this.tools})
+      : super._();
+  @override
+  McpConfigGet200Response rebuild(
+          void Function(McpConfigGet200ResponseBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  McpConfigGet200ResponseBuilder toBuilder() =>
+      McpConfigGet200ResponseBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is McpConfigGet200Response &&
+        enabled == other.enabled &&
+        plan == other.plan &&
+        allowedPlans == other.allowedPlans &&
+        freePromoActive == other.freePromoActive &&
+        freePromoEndsAt == other.freePromoEndsAt &&
+        endpoint == other.endpoint &&
+        tools == other.tools;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, enabled.hashCode);
+    _$hash = $jc(_$hash, plan.hashCode);
+    _$hash = $jc(_$hash, allowedPlans.hashCode);
+    _$hash = $jc(_$hash, freePromoActive.hashCode);
+    _$hash = $jc(_$hash, freePromoEndsAt.hashCode);
+    _$hash = $jc(_$hash, endpoint.hashCode);
+    _$hash = $jc(_$hash, tools.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'McpConfigGet200Response')
+          ..add('enabled', enabled)
+          ..add('plan', plan)
+          ..add('allowedPlans', allowedPlans)
+          ..add('freePromoActive', freePromoActive)
+          ..add('freePromoEndsAt', freePromoEndsAt)
+          ..add('endpoint', endpoint)
+          ..add('tools', tools))
+        .toString();
+  }
+}
+
+class McpConfigGet200ResponseBuilder
+    implements
+        Builder<McpConfigGet200Response, McpConfigGet200ResponseBuilder> {
+  _$McpConfigGet200Response? _$v;
+
+  bool? _enabled;
+  bool? get enabled => _$this._enabled;
+  set enabled(bool? enabled) => _$this._enabled = enabled;
+
+  String? _plan;
+  String? get plan => _$this._plan;
+  set plan(String? plan) => _$this._plan = plan;
+
+  ListBuilder<String>? _allowedPlans;
+  ListBuilder<String> get allowedPlans =>
+      _$this._allowedPlans ??= ListBuilder<String>();
+  set allowedPlans(ListBuilder<String>? allowedPlans) =>
+      _$this._allowedPlans = allowedPlans;
+
+  bool? _freePromoActive;
+  bool? get freePromoActive => _$this._freePromoActive;
+  set freePromoActive(bool? freePromoActive) =>
+      _$this._freePromoActive = freePromoActive;
+
+  DateTime? _freePromoEndsAt;
+  DateTime? get freePromoEndsAt => _$this._freePromoEndsAt;
+  set freePromoEndsAt(DateTime? freePromoEndsAt) =>
+      _$this._freePromoEndsAt = freePromoEndsAt;
+
+  String? _endpoint;
+  String? get endpoint => _$this._endpoint;
+  set endpoint(String? endpoint) => _$this._endpoint = endpoint;
+
+  ListBuilder<McpConfigGet200ResponseToolsInner>? _tools;
+  ListBuilder<McpConfigGet200ResponseToolsInner> get tools =>
+      _$this._tools ??= ListBuilder<McpConfigGet200ResponseToolsInner>();
+  set tools(ListBuilder<McpConfigGet200ResponseToolsInner>? tools) =>
+      _$this._tools = tools;
+
+  McpConfigGet200ResponseBuilder() {
+    McpConfigGet200Response._defaults(this);
+  }
+
+  McpConfigGet200ResponseBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _enabled = $v.enabled;
+      _plan = $v.plan;
+      _allowedPlans = $v.allowedPlans?.toBuilder();
+      _freePromoActive = $v.freePromoActive;
+      _freePromoEndsAt = $v.freePromoEndsAt;
+      _endpoint = $v.endpoint;
+      _tools = $v.tools?.toBuilder();
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(McpConfigGet200Response other) {
+    _$v = other as _$McpConfigGet200Response;
+  }
+
+  @override
+  void update(void Function(McpConfigGet200ResponseBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  McpConfigGet200Response build() => _build();
+
+  _$McpConfigGet200Response _build() {
+    _$McpConfigGet200Response _$result;
+    try {
+      _$result = _$v ??
+          _$McpConfigGet200Response._(
+            enabled: enabled,
+            plan: plan,
+            allowedPlans: _allowedPlans?.build(),
+            freePromoActive: freePromoActive,
+            freePromoEndsAt: freePromoEndsAt,
+            endpoint: endpoint,
+            tools: _tools?.build(),
+          );
+    } catch (_) {
+      late String _$failedField;
+      try {
+        _$failedField = 'allowedPlans';
+        _allowedPlans?.build();
+
+        _$failedField = 'tools';
+        _tools?.build();
+      } catch (e) {
+        throw BuiltValueNestedFieldError(
+            r'McpConfigGet200Response', _$failedField, e.toString());
+      }
+      rethrow;
+    }
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

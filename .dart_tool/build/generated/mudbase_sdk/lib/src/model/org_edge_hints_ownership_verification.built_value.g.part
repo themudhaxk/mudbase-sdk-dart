@@ -1,0 +1,117 @@
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$OrgEdgeHintsOwnershipVerification
+    extends OrgEdgeHintsOwnershipVerification {
+  @override
+  final String? name;
+  @override
+  final String? type;
+  @override
+  final String? value;
+
+  factory _$OrgEdgeHintsOwnershipVerification(
+          [void Function(OrgEdgeHintsOwnershipVerificationBuilder)? updates]) =>
+      (OrgEdgeHintsOwnershipVerificationBuilder()..update(updates))._build();
+
+  _$OrgEdgeHintsOwnershipVerification._({this.name, this.type, this.value})
+      : super._();
+  @override
+  OrgEdgeHintsOwnershipVerification rebuild(
+          void Function(OrgEdgeHintsOwnershipVerificationBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  OrgEdgeHintsOwnershipVerificationBuilder toBuilder() =>
+      OrgEdgeHintsOwnershipVerificationBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is OrgEdgeHintsOwnershipVerification &&
+        name == other.name &&
+        type == other.type &&
+        value == other.value;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, type.hashCode);
+    _$hash = $jc(_$hash, value.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'OrgEdgeHintsOwnershipVerification')
+          ..add('name', name)
+          ..add('type', type)
+          ..add('value', value))
+        .toString();
+  }
+}
+
+class OrgEdgeHintsOwnershipVerificationBuilder
+    implements
+        Builder<OrgEdgeHintsOwnershipVerification,
+            OrgEdgeHintsOwnershipVerificationBuilder> {
+  _$OrgEdgeHintsOwnershipVerification? _$v;
+
+  String? _name;
+  String? get name => _$this._name;
+  set name(String? name) => _$this._name = name;
+
+  String? _type;
+  String? get type => _$this._type;
+  set type(String? type) => _$this._type = type;
+
+  String? _value;
+  String? get value => _$this._value;
+  set value(String? value) => _$this._value = value;
+
+  OrgEdgeHintsOwnershipVerificationBuilder() {
+    OrgEdgeHintsOwnershipVerification._defaults(this);
+  }
+
+  OrgEdgeHintsOwnershipVerificationBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _name = $v.name;
+      _type = $v.type;
+      _value = $v.value;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(OrgEdgeHintsOwnershipVerification other) {
+    _$v = other as _$OrgEdgeHintsOwnershipVerification;
+  }
+
+  @override
+  void update(
+      void Function(OrgEdgeHintsOwnershipVerificationBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  OrgEdgeHintsOwnershipVerification build() => _build();
+
+  _$OrgEdgeHintsOwnershipVerification _build() {
+    final _$result = _$v ??
+        _$OrgEdgeHintsOwnershipVerification._(
+          name: name,
+          type: type,
+          value: value,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint
