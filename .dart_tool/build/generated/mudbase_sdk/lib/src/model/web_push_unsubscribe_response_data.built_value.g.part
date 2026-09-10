@@ -1,0 +1,91 @@
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$WebPushUnsubscribeResponseData extends WebPushUnsubscribeResponseData {
+  @override
+  final bool? removed;
+
+  factory _$WebPushUnsubscribeResponseData(
+          [void Function(WebPushUnsubscribeResponseDataBuilder)? updates]) =>
+      (WebPushUnsubscribeResponseDataBuilder()..update(updates))._build();
+
+  _$WebPushUnsubscribeResponseData._({this.removed}) : super._();
+  @override
+  WebPushUnsubscribeResponseData rebuild(
+          void Function(WebPushUnsubscribeResponseDataBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  WebPushUnsubscribeResponseDataBuilder toBuilder() =>
+      WebPushUnsubscribeResponseDataBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is WebPushUnsubscribeResponseData && removed == other.removed;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, removed.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'WebPushUnsubscribeResponseData')
+          ..add('removed', removed))
+        .toString();
+  }
+}
+
+class WebPushUnsubscribeResponseDataBuilder
+    implements
+        Builder<WebPushUnsubscribeResponseData,
+            WebPushUnsubscribeResponseDataBuilder> {
+  _$WebPushUnsubscribeResponseData? _$v;
+
+  bool? _removed;
+  bool? get removed => _$this._removed;
+  set removed(bool? removed) => _$this._removed = removed;
+
+  WebPushUnsubscribeResponseDataBuilder() {
+    WebPushUnsubscribeResponseData._defaults(this);
+  }
+
+  WebPushUnsubscribeResponseDataBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _removed = $v.removed;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(WebPushUnsubscribeResponseData other) {
+    _$v = other as _$WebPushUnsubscribeResponseData;
+  }
+
+  @override
+  void update(void Function(WebPushUnsubscribeResponseDataBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  WebPushUnsubscribeResponseData build() => _build();
+
+  _$WebPushUnsubscribeResponseData _build() {
+    final _$result = _$v ??
+        _$WebPushUnsubscribeResponseData._(
+          removed: removed,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

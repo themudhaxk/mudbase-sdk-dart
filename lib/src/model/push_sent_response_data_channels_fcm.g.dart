@@ -1,0 +1,109 @@
+// GENERATED CODE - DO NOT MODIFY BY HAND
+
+part of 'push_sent_response_data_channels_fcm.dart';
+
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$PushSentResponseDataChannelsFcm
+    extends PushSentResponseDataChannelsFcm {
+  @override
+  final int? successCount;
+  @override
+  final int? failureCount;
+
+  factory _$PushSentResponseDataChannelsFcm(
+          [void Function(PushSentResponseDataChannelsFcmBuilder)? updates]) =>
+      (PushSentResponseDataChannelsFcmBuilder()..update(updates))._build();
+
+  _$PushSentResponseDataChannelsFcm._({this.successCount, this.failureCount})
+      : super._();
+  @override
+  PushSentResponseDataChannelsFcm rebuild(
+          void Function(PushSentResponseDataChannelsFcmBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  PushSentResponseDataChannelsFcmBuilder toBuilder() =>
+      PushSentResponseDataChannelsFcmBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is PushSentResponseDataChannelsFcm &&
+        successCount == other.successCount &&
+        failureCount == other.failureCount;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, successCount.hashCode);
+    _$hash = $jc(_$hash, failureCount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'PushSentResponseDataChannelsFcm')
+          ..add('successCount', successCount)
+          ..add('failureCount', failureCount))
+        .toString();
+  }
+}
+
+class PushSentResponseDataChannelsFcmBuilder
+    implements
+        Builder<PushSentResponseDataChannelsFcm,
+            PushSentResponseDataChannelsFcmBuilder> {
+  _$PushSentResponseDataChannelsFcm? _$v;
+
+  int? _successCount;
+  int? get successCount => _$this._successCount;
+  set successCount(int? successCount) => _$this._successCount = successCount;
+
+  int? _failureCount;
+  int? get failureCount => _$this._failureCount;
+  set failureCount(int? failureCount) => _$this._failureCount = failureCount;
+
+  PushSentResponseDataChannelsFcmBuilder() {
+    PushSentResponseDataChannelsFcm._defaults(this);
+  }
+
+  PushSentResponseDataChannelsFcmBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _successCount = $v.successCount;
+      _failureCount = $v.failureCount;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(PushSentResponseDataChannelsFcm other) {
+    _$v = other as _$PushSentResponseDataChannelsFcm;
+  }
+
+  @override
+  void update(void Function(PushSentResponseDataChannelsFcmBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  PushSentResponseDataChannelsFcm build() => _build();
+
+  _$PushSentResponseDataChannelsFcm _build() {
+    final _$result = _$v ??
+        _$PushSentResponseDataChannelsFcm._(
+          successCount: successCount,
+          failureCount: failureCount,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

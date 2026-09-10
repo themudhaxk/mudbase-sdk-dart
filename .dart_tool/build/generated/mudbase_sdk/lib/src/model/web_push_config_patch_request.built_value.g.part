@@ -1,0 +1,114 @@
+// **************************************************************************
+// BuiltValueGenerator
+// **************************************************************************
+
+class _$WebPushConfigPatchRequest extends WebPushConfigPatchRequest {
+  @override
+  final bool? enabled;
+  @override
+  final bool? rotateKeys;
+  @override
+  final String? subject;
+
+  factory _$WebPushConfigPatchRequest(
+          [void Function(WebPushConfigPatchRequestBuilder)? updates]) =>
+      (WebPushConfigPatchRequestBuilder()..update(updates))._build();
+
+  _$WebPushConfigPatchRequest._({this.enabled, this.rotateKeys, this.subject})
+      : super._();
+  @override
+  WebPushConfigPatchRequest rebuild(
+          void Function(WebPushConfigPatchRequestBuilder) updates) =>
+      (toBuilder()..update(updates)).build();
+
+  @override
+  WebPushConfigPatchRequestBuilder toBuilder() =>
+      WebPushConfigPatchRequestBuilder()..replace(this);
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(other, this)) return true;
+    return other is WebPushConfigPatchRequest &&
+        enabled == other.enabled &&
+        rotateKeys == other.rotateKeys &&
+        subject == other.subject;
+  }
+
+  @override
+  int get hashCode {
+    var _$hash = 0;
+    _$hash = $jc(_$hash, enabled.hashCode);
+    _$hash = $jc(_$hash, rotateKeys.hashCode);
+    _$hash = $jc(_$hash, subject.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
+  }
+
+  @override
+  String toString() {
+    return (newBuiltValueToStringHelper(r'WebPushConfigPatchRequest')
+          ..add('enabled', enabled)
+          ..add('rotateKeys', rotateKeys)
+          ..add('subject', subject))
+        .toString();
+  }
+}
+
+class WebPushConfigPatchRequestBuilder
+    implements
+        Builder<WebPushConfigPatchRequest, WebPushConfigPatchRequestBuilder> {
+  _$WebPushConfigPatchRequest? _$v;
+
+  bool? _enabled;
+  bool? get enabled => _$this._enabled;
+  set enabled(bool? enabled) => _$this._enabled = enabled;
+
+  bool? _rotateKeys;
+  bool? get rotateKeys => _$this._rotateKeys;
+  set rotateKeys(bool? rotateKeys) => _$this._rotateKeys = rotateKeys;
+
+  String? _subject;
+  String? get subject => _$this._subject;
+  set subject(String? subject) => _$this._subject = subject;
+
+  WebPushConfigPatchRequestBuilder() {
+    WebPushConfigPatchRequest._defaults(this);
+  }
+
+  WebPushConfigPatchRequestBuilder get _$this {
+    final $v = _$v;
+    if ($v != null) {
+      _enabled = $v.enabled;
+      _rotateKeys = $v.rotateKeys;
+      _subject = $v.subject;
+      _$v = null;
+    }
+    return this;
+  }
+
+  @override
+  void replace(WebPushConfigPatchRequest other) {
+    _$v = other as _$WebPushConfigPatchRequest;
+  }
+
+  @override
+  void update(void Function(WebPushConfigPatchRequestBuilder)? updates) {
+    if (updates != null) updates(this);
+  }
+
+  @override
+  WebPushConfigPatchRequest build() => _build();
+
+  _$WebPushConfigPatchRequest _build() {
+    final _$result = _$v ??
+        _$WebPushConfigPatchRequest._(
+          enabled: enabled,
+          rotateKeys: rotateKeys,
+          subject: subject,
+        );
+    replace(_$result);
+    return _$result;
+  }
+}
+
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint
